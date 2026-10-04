@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профессии — ПрофиТрек</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">П</span><span>Профи<span>Трек</span></span></a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <a href="index.html#how">Как это работает</a>
+        <a href="professions.html" class="active">Профессии</a>
+        <a href="index.html#about">О проекте</a>
+        <a class="btn btn-primary btn-small" href="test.html">Пройти тест</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div class="container">
+        <span class="section-kicker">КАТАЛОГ</span>
+        <h1>Профессии, которые<br><span>можно исследовать.</span></h1>
+        <p>Изучай направления, навыки и школьные предметы, которые пригодятся в разных профессиях.</p>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="container">
+        <div class="filters" id="professionFilters"></div>
+        <div id="professionGrid" class="profession-catalog-grid"></div>
+        <div id="emptyState" class="empty-state hidden">По этому фильтру пока ничего не найдено.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">П</span><span>Профи<span>Трек</span></span></a>
+      <p>Исследуй интересы. Пробуй новое. Строй свой маршрут.</p>
+      <span class="footer-note">© 2026 ПрофиТрек</span>
+    </div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

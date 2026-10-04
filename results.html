@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результат — ПрофиТрек</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">П</span><span>Профи<span>Трек</span></span></a>
+      <nav class="main-nav desktop-only">
+        <a href="index.html#how">Как это работает</a>
+        <a href="professions.html">Профессии</a>
+        <a href="index.html#about">О проекте</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="results-main">
+    <div class="container" id="resultsApp">
+      <section class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+        <h1>Анализируем твои ответы…</h1>
+        <p>Подбираем направления и профессии</p>
+      </section>
+
+      <div id="resultsContent" class="results-content hidden">
+        <div class="result-header reveal">
+          <span class="section-kicker">ТВОЙ ПРОФЕССИОНАЛЬНЫЙ ПРОФИЛЬ</span>
+          <h1 id="profileName">Техно-аналитик</h1>
+          <p id="profileDescription"></p>
+        </div>
+
+        <section class="result-section">
+          <div class="section-heading compact">
+            <div><span class="section-kicker">ТОП-3</span><h2>Что тебе может подойти</h2></div>
+          </div>
+          <div id="topDirections" class="direction-list"></div>
+        </section>
+
+        <section class="result-section">
+          <div class="section-heading compact">
+            <div><span class="section-kicker">ТОП-5</span><h2>Профессии для изучения</h2></div>
+          </div>
+          <div id="topProfessions" class="profession-result-grid"></div>
+        </section>
+
+        <div class="result-actions">
+          <a class="btn btn-dark" href="professions.html">Посмотреть все профессии →</a>
+          <button class="btn btn-outline" id="restartBtn">Пройти тест заново</button>
+        </div>
+        <p class="disclaimer">Результат показывает направления, которые сильнее всего совпали с твоими ответами. Он не заменяет консультацию и самостоятельное знакомство с профессиями.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

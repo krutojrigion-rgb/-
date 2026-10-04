@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ПрофиТрек — интерактивный профориентационный тест для школьников.">
+  <title>ПрофиТрек — найди своё направление</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html" aria-label="ПрофиТрек">
+        <span class="logo-mark">П</span><span>Профи<span>Трек</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <a href="#how">Как это работает</a>
+        <a href="professions.html">Профессии</a>
+        <a href="#about">О проекте</a>
+        <a class="btn btn-primary btn-small" href="test.html">Пройти тест</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> Профориентация без скучных анкет</div>
+          <h1>Не знаешь, кем стать? <span>Узнай, какая профессия подходит именно тебе</span></h1>
+          <p class="hero-subtitle">Ответь на несколько вопросов о своих интересах, характере и сильных сторонах — и получи персональную подборку профессий.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="test.html">Начать тест <span>→</span></a>
+            <a class="text-link" href="#how">Как это работает <span>↓</span></a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>15</strong><span>минут</span></div>
+            <div><strong>20</strong><span>вопросов</span></div>
+            <div><strong>5</strong><span>профессий в результате</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art reveal reveal-delay">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="career-card card-one"><span class="mini-icon">⌘</span><b>IT</b><small>Технологии</small></div>
+          <div class="career-card card-two"><span class="mini-icon">✦</span><b>Дизайн</b><small>Креатив</small></div>
+          <div class="career-card card-three"><span class="mini-icon">↗</span><b>Бизнес</b><small>Стратегия</small></div>
+          <div class="hero-center">
+            <div class="center-ring"><span>П</span></div>
+            <strong>Твой<br>маршрут</strong>
+            <small>от интересов<br>к возможностям</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="how">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">ПРОСТОЙ ПУТЬ</span>
+            <h2>Как это работает</h2>
+          </div>
+          <p>Никаких правильных и неправильных ответов. Важнее всего — отвечать честно.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-number">01</span><div class="step-icon">☑</div>
+            <h3>Отвечаешь</h3>
+            <p>20 коротких вопросов об интересах, ценностях и способе мышления.</p>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-number">02</span><div class="step-icon">◌</div>
+            <h3>Мы анализируем</h3>
+            <p>Ответы превращаются в профиль из профессиональных направлений.</p>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-number">03</span><div class="step-icon">↗</div>
+            <h3>Получаешь результат</h3>
+            <p>Три сильнейших направления и пять профессий с объяснением совпадения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-badge">ПРОФИ<br>ТРЕК</div>
+          <div class="about-circle circle-a"></div>
+          <div class="about-circle circle-b"></div>
+          <div class="about-label label-a">интересы</div>
+          <div class="about-label label-b">навыки</div>
+          <div class="about-label label-c">ценности</div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="section-kicker">О ПРОЕКТЕ</span>
+          <h2>Профессия — это не случайный выбор.</h2>
+          <p>ПрофиТрек создан для школьников, которые хотят лучше понять свои интересы и увидеть возможные пути развития.</p>
+          <p class="muted">Результат теста — не приговор и не готовое решение. Это отправная точка для самостоятельного исследования профессий.</p>
+          <a class="btn btn-dark" href="professions.html">Исследовать профессии <span>→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">П</span><span>Профи<span>Трек</span></span></a>
+      <p>Исследуй интересы. Пробуй новое. Строй свой маршрут.</p>
+      <span class="footer-note">© 2026 ПрофиТрек</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

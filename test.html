@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест — ПрофиТрек</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="test-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">П</span><span>Профи<span>Трек</span></span></a>
+      <a class="exit-test" href="index.html">Выйти из теста</a>
+    </div>
+  </header>
+
+  <main class="test-main">
+    <div class="container test-container">
+      <div class="test-top">
+        <div>
+          <span class="section-kicker">ПРОФОРИЕНТАЦИОННЫЙ ТЕСТ</span>
+          <h1>Познакомимся с твоими интересами</h1>
+        </div>
+        <div class="question-counter" id="questionCounter">Вопрос 1 из 20</div>
+      </div>
+
+      <div class="progress-track" aria-label="Прогресс теста">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <section class="question-card" id="questionCard">
+        <div class="question-meta" id="questionMeta">Вопрос 01</div>
+        <h2 id="questionText"></h2>
+        <div class="answers-grid" id="answers"></div>
+        <div class="test-error" id="testError" role="alert">Выбери один вариант, чтобы продолжить.</div>
+      </section>
+
+      <div class="test-controls">
+        <button class="btn btn-ghost" id="backBtn">← Назад</button>
+        <button class="btn btn-primary" id="nextBtn">Далее →</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
